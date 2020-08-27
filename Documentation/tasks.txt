@@ -30,3 +30,12 @@ Started creating currencyExchange
 - Created XMLReader
 -- Added url to document factory
 https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml
+
+Tasks
+27/08/2020
+
+- Created ConverterTest.java and Converter.java
+- Completed test case when_2euro_converts_to_2point3578_usd()
+- Created MenuTest.Java and Menu.java
+- Completed Test case when_menuDisplay_is_called_menu_is_displayed()
+- Completed test case for when_readInput_is_called_input_is_read_and_saved()
