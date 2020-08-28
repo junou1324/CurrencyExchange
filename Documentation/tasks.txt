@@ -39,3 +39,13 @@ Tasks
 - Created MenuTest.Java and Menu.java
 - Completed Test case when_menuDisplay_is_called_menu_is_displayed()
 - Completed test case for when_readInput_is_called_input_is_read_and_saved()
+
+Tasks
+28/08/2020
+- Created Menu.readAmount() to read Euro input
+- Created Menu.readCurrency() to read currency input
+- Created constructor for Converter() to initialise attributes of the class
+- Created temporary Main() in ConverterTest to test Converter.convert() method
+
+Blockers
+- Once exception is caught, readAmount returns null rather than starting again.
