@@ -10,23 +10,18 @@ public class Menu {
         System.out.println("Welcome to Currency Exchange");
         System.out.println("This program converts EURO to any currency");
         
-	}
+    }
 
 	public Double readAmount() {
         Double userInput = null;
+        BufferedReader in ;
         try {
-            
             System.out.print("Please Enter euro amount:");
-            BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+            in = new BufferedReader(new InputStreamReader(System.in));
             userInput = Double.parseDouble(in.readLine());
         } catch (Exception e) {
-            e.printStackTrace();
-        }
-        finally{
-            if(userInput == null)
-            {
-                System.out.println("ERROR:userInput for readAmount() is null");
-            }
+            System.out.println("ERROR");
+            return null;
         }
         return userInput;
 	}

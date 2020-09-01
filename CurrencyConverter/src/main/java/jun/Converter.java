@@ -16,9 +16,20 @@ public class Converter {
         }
 	public Double convert() {
                 Double result = null;
-                double euro = menu.readAmount();
+                Double euro = menu.readAmount();
+
+                while(euro == null)
+                {
+                        euro = menu.readAmount();
+                }
+                
         try {
-                double currentRate = rates.get(menu.readCurrency().toUpperCase());
+                //FIX Looping inputs
+                String currencyInput = menu.readCurrency().toUpperCase(); 
+                while(rates.get(currencyInput) == null) {
+                        menu.readCurrency().toUpperCase();
+                }
+                double currentRate = rates.get(currencyInput);
         
                 result = euro*currentRate;   
         } catch (Exception e) {
